@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.box {
+    width: 100%;
+
+    height: 100vh;
+    background: dimgray;
+    align-items: center;
+    justify-content: center;
+    /*Yaxis*/
+    display: flex;
+}
+
+.calculator {
+    background: rgb(223, 55, 13);
+    padding: 20px;
+    border: 5px solid rgb(83, 235, 8);
+    border-radius: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    /*removes the outline of the typing space*/
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(7, 10, 2, 0.9), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+/* form.display and form .display are different. */
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    /* border: 2px solid blue; */
+
+}
+
+/* form.display and form .display are different. */
+form .display input {
+    /* below changes the position of numbers to right side */
+    text-align: right;
+    flex: 1;
+    font-size: 50px;
+    background-color: rgb(16, 163, 16);
+    border-radius: 10px;
+}
+
+/* below helps to make the equal to increse length of (=) button */
+form input.equal {
+
+    width: 145px;
+}
+
+form input .operator {
+    color: aquamarine;
+
+}
